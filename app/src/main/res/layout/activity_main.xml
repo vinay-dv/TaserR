@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vinaykatariya.taser.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="#00bfff"
+            android:fontFamily="cursive"
+            android:text="viu"
+            android:textAlignment="center"
+            android:textColor="#f0f7ef"
+            android:textSize="120sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:text="ON/OFF"
+                android:textColor="#f0f7ef"
+                android:layout_width="wrap_content"
+                android:background="#05b805"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnONOFF"/>
+
+            <Button
+                android:layout_weight="1"
+                android:text="Enable Discoverable"
+                android:layout_width="wrap_content"
+                android:textColor="#f0f7ef"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDiscoverable_on_off"
+                android:onClick="btnEnableDisable_Discoverable"
+                android:background="#05b805"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f0f7ef"
+                android:id="@+id/btnFindUnpairedDevices"
+                android:text="Discover"
+                android:background="#05b805"
+                android:onClick="btnDiscover"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device list"
+            android:textAlignment="center"
+            android:textColor="#00bfff"
+            android:fontFamily="cursive"
+            android:textSize="20dp"
+            />
+
+        <ListView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lvNewDevices"/>
+
+        <Button
+
+            android:layout_marginTop="10dp"
+            android:background="#05b805"
+            android:layout_width="match_parent"
+            android:textColor="#f0f7ef"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartConnection"
+            android:text="Start Connection"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text Here" />
+
+        <Button
+            android:layout_marginHorizontal="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:id="@+id/btnSend"
+            android:textColor="#f0f7ef"
+            android:background="#05b805"
+            />
+    </LinearLayout>
+
+</ScrollView>

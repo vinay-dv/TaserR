@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:background="#00bfff"
+            android:fontFamily="cursive"
+            android:text="viu"
+            android:textAlignment="center"
+            android:textColor="#f0f7ef"
+            android:textSize="120sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="8dp"
+            android:background="#00bfff"
+            android:fontFamily="casual"
+            android:paddingTop="3dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#f0f7ef"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:fadingEdge="horizontal"
+            android:fontFamily="casual"
+            android:paddingTop="2dp"
+            android:text="FORGOTTEN PASSWORD?"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="27dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-11dp"
+            android:fontFamily="casual"
+            android:text="OR"
+            android:textAlignment="center" />
+        <Button
+            android:id="@+id/textview4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:background="#05b805"
+            android:fontFamily="casual"
+            android:paddingTop="2dp"
+            android:text="CREATE NEW ACCOUNT"
+            android:textAlignment="center"
+            android:textColor="#f0f7ef"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+    </LinearLayout>
+</ScrollView>
